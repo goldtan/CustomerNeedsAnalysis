@@ -69,7 +69,7 @@ tool은 jupyter notebook을 사용하였고, 각 과정을 하나의 .ipynb 파�
 
 ## 4.2. LDA
 
-LDA는 gensim이라는 open source library를 사용하여 구현하였습니다. LDA를 수행하기 위해서는 hyperparameter인 토픽 수를 정해야 하는데, 이 때는 perplexity와 coherence를 참고하였습니다. perplexity는 혼잡도로 값이 낮을수록 좋고 coherence는 응집도로 값이 높을수록 좋습니다. 물론 두 지표 모두 절대적인 지표는 아니고 사용자의 재량에 따라 토픽 수를 선택하면 되지만 비지도 학습이기 때문에 판단하기에 어려움이 있어 두 지표를 기준으로 선정하였습니다.<br>
+LDA는 gensim이라는 open source library를 사용하여 구현하였습니다. 라이센스 또한 gensim과 동일하게 설정하였습니다. LDA를 수행하기 위해서는 hyperparameter인 토픽 수를 정해야 하는데, 이 때는 perplexity와 coherence를 참고하였습니다. perplexity는 혼잡도로 값이 낮을수록 좋고 coherence는 응집도로 값이 높을수록 좋습니다. 물론 두 지표 모두 절대적인 지표는 아니고 사용자의 재량에 따라 토픽 수를 선택하면 되지만 비지도 학습이기 때문에 판단하기에 어려움이 있어 두 지표를 기준으로 선정하였습니다.<br>
 ![다운로드 (1)](https://user-images.githubusercontent.com/83542989/146909057-60feee99-8e46-4f12-a28d-b7f17a1c48ba.png)
 ![다운로드](https://user-images.githubusercontent.com/83542989/146909064-e4424433-7d62-4e93-b366-96847cffee25.png)
 위 그림은 모든 리뷰 데이터, 아래 그림은 부정적인 리뷰 데이터의 topic 별 coherence / perplexity 그래프입니다.<br>
